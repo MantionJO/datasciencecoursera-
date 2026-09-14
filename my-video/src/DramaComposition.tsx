@@ -6,22 +6,35 @@ import {
   Interactive,
   Sequence,
   interpolate,
+  staticFile,
   useCurrentFrame,
   useVideoConfig,
 } from "remotion";
+import { Audio } from "@remotion/media";
 import { PROVERB, SUBTITLE, TITLE } from "./story/script";
-import { LineTimeline, SceneTimeline, buildTimeline } from "./story/timing";
+import {
+  LineTimeline,
+  SceneTimeline,
+  buildTimeline,
+  outroProverbAudio,
+} from "./story/timing";
 
-// Audio (intro/outro music, per-scene ambience, per-character voices, SFX) is
-// intentionally not wired in yet — no recordings or licensed assets exist in
-// this project. Once available, drop files under public/audio/ and add
-// <Audio src={staticFile(...)}/> (from "@remotion/media") inside the relevant
-// scene/intro/outro below, matching the sound design notes for each beat.
+// Voices are placeholder speech synthesized locally with espeak-ng (see
+// scripts/generate-voiceover-local.ts) — robotic, but real timed audio.
+// Swap in scripts/generate-voiceover.ts (ElevenLabs) for final-quality
+// voices later; the wiring below (<Audio> per line) stays the same.
+//
+// Intro/outro music, per-scene ambience and SFX are still not wired in —
+// no licensed assets exist in this project. Once available, drop files
+// under public/audio/ and add <Audio src={staticFile(...)}/> for those
+// beats, matching the sound design notes.
 
 type Props = {};
 
-const calculateMetadata: CalculateMetadataFunction<Props> = ({ fps }) => {
-  const timeline = buildTimeline(fps);
+const FPS = 30;
+
+const calculateMetadata: CalculateMetadataFunction<Props> = () => {
+  const timeline = buildTimeline(FPS);
   return { durationInFrames: timeline.totalDurationInFrames };
 };
 
@@ -30,7 +43,7 @@ export const DramaComposition = () => {
     <Composition
       id="MoutonDeVieuxDago"
       component={DramaVideo}
-      fps={30}
+      fps={FPS}
       width={1920}
       height={1080}
       durationInFrames={600}
@@ -245,6 +258,7 @@ const LineCaption: React.FC<{
         padding: "0 180px 140px 180px",
       }}
     >
+      {lineTimeline.audioFile && <Audio src={staticFile(lineTimeline.audioFile)} />}
       <Interactive.Div
         name="Caption"
         style={{
@@ -331,6 +345,9 @@ const OutroCard: React.FC<{ durationInFrames: number }> = ({
         padding: "0 200px",
       }}
     >
+      <Sequence from={Math.round(0.4 * fps)} layout="none">
+        <Audio src={staticFile(outroProverbAudio.file)} />
+      </Sequence>
       <Interactive.Div
         name="Proverb"
         style={{
