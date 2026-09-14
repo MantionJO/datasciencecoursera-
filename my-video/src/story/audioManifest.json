@@ -1,0 +1,254 @@
+{
+  "scenes": {
+    "maison": {
+      "1": {
+        "file": "voiceover/MoutonDeVieuxDago/maison/1.mp3",
+        "durationSeconds": 10.945306
+      },
+      "2": {
+        "file": "voiceover/MoutonDeVieuxDago/maison/2.mp3",
+        "durationSeconds": 15.830204
+      },
+      "3": {
+        "file": "voiceover/MoutonDeVieuxDago/maison/3.mp3",
+        "durationSeconds": 8.124082
+      },
+      "4": {
+        "file": "voiceover/MoutonDeVieuxDago/maison/4.mp3",
+        "durationSeconds": 8.85551
+      },
+      "5": {
+        "file": "voiceover/MoutonDeVieuxDago/maison/5.mp3",
+        "durationSeconds": 6.582857
+      },
+      "6": {
+        "file": "voiceover/MoutonDeVieuxDago/maison/6.mp3",
+        "durationSeconds": 9.482449
+      },
+      "7": {
+        "file": "voiceover/MoutonDeVieuxDago/maison/7.mp3",
+        "durationSeconds": 4.963265
+      },
+      "8": {
+        "file": "voiceover/MoutonDeVieuxDago/maison/8.mp3",
+        "durationSeconds": 7.78449
+      },
+      "9": {
+        "file": "voiceover/MoutonDeVieuxDago/maison/9.mp3",
+        "durationSeconds": 6.713469
+      },
+      "10": {
+        "file": "voiceover/MoutonDeVieuxDago/maison/10.mp3",
+        "durationSeconds": 5.355102
+      },
+      "11": {
+        "file": "voiceover/MoutonDeVieuxDago/maison/11.mp3",
+        "durationSeconds": 11.546122
+      },
+      "12": {
+        "file": "voiceover/MoutonDeVieuxDago/maison/12.mp3",
+        "durationSeconds": 10.396735
+      }
+    },
+    "route": {
+      "0": {
+        "file": "voiceover/MoutonDeVieuxDago/route/0.mp3",
+        "durationSeconds": 12.173061
+      },
+      "2": {
+        "file": "voiceover/MoutonDeVieuxDago/route/2.mp3",
+        "durationSeconds": 6.739592
+      },
+      "3": {
+        "file": "voiceover/MoutonDeVieuxDago/route/3.mp3",
+        "durationSeconds": 6.739592
+      },
+      "4": {
+        "file": "voiceover/MoutonDeVieuxDago/route/4.mp3",
+        "durationSeconds": 8.124082
+      },
+      "5": {
+        "file": "voiceover/MoutonDeVieuxDago/route/5.mp3",
+        "durationSeconds": 7.68
+      },
+      "6": {
+        "file": "voiceover/MoutonDeVieuxDago/route/6.mp3",
+        "durationSeconds": 7.88898
+      },
+      "7": {
+        "file": "voiceover/MoutonDeVieuxDago/route/7.mp3",
+        "durationSeconds": 8.933878
+      },
+      "8": {
+        "file": "voiceover/MoutonDeVieuxDago/route/8.mp3",
+        "durationSeconds": 5.694694
+      }
+    },
+    "marche": {
+      "1": {
+        "file": "voiceover/MoutonDeVieuxDago/marche/1.mp3",
+        "durationSeconds": 10.370612
+      },
+      "2": {
+        "file": "voiceover/MoutonDeVieuxDago/marche/2.mp3",
+        "durationSeconds": 4.989388
+      },
+      "3": {
+        "file": "voiceover/MoutonDeVieuxDago/marche/3.mp3",
+        "durationSeconds": 4.257959
+      },
+      "4": {
+        "file": "voiceover/MoutonDeVieuxDago/marche/4.mp3",
+        "durationSeconds": 4.101224
+      },
+      "5": {
+        "file": "voiceover/MoutonDeVieuxDago/marche/5.mp3",
+        "durationSeconds": 3.552653
+      },
+      "6": {
+        "file": "voiceover/MoutonDeVieuxDago/marche/6.mp3",
+        "durationSeconds": 11.755102
+      },
+      "7": {
+        "file": "voiceover/MoutonDeVieuxDago/marche/7.mp3",
+        "durationSeconds": 9.195102
+      },
+      "8": {
+        "file": "voiceover/MoutonDeVieuxDago/marche/8.mp3",
+        "durationSeconds": 8.359184
+      },
+      "9": {
+        "file": "voiceover/MoutonDeVieuxDago/marche/9.mp3",
+        "durationSeconds": 4.440816
+      },
+      "10": {
+        "file": "voiceover/MoutonDeVieuxDago/marche/10.mp3",
+        "durationSeconds": 6.635102
+      },
+      "11": {
+        "file": "voiceover/MoutonDeVieuxDago/marche/11.mp3",
+        "durationSeconds": 3.239184
+      },
+      "12": {
+        "file": "voiceover/MoutonDeVieuxDago/marche/12.mp3",
+        "durationSeconds": 5.250612
+      },
+      "14": {
+        "file": "voiceover/MoutonDeVieuxDago/marche/14.mp3",
+        "durationSeconds": 7.314286
+      },
+      "15": {
+        "file": "voiceover/MoutonDeVieuxDago/marche/15.mp3",
+        "durationSeconds": 7.392653
+      },
+      "16": {
+        "file": "voiceover/MoutonDeVieuxDago/marche/16.mp3",
+        "durationSeconds": 9.456327
+      },
+      "17": {
+        "file": "voiceover/MoutonDeVieuxDago/marche/17.mp3",
+        "durationSeconds": 3.63102
+      },
+      "18": {
+        "file": "voiceover/MoutonDeVieuxDago/marche/18.mp3",
+        "durationSeconds": 5.590204
+      }
+    },
+    "mouton-rebelle": {
+      "0": {
+        "file": "voiceover/MoutonDeVieuxDago/mouton-rebelle/0.mp3",
+        "durationSeconds": 12.512653
+      },
+      "1": {
+        "file": "voiceover/MoutonDeVieuxDago/mouton-rebelle/1.mp3",
+        "durationSeconds": 2.716735
+      },
+      "2": {
+        "file": "voiceover/MoutonDeVieuxDago/mouton-rebelle/2.mp3",
+        "durationSeconds": 2.377143
+      },
+      "4": {
+        "file": "voiceover/MoutonDeVieuxDago/mouton-rebelle/4.mp3",
+        "durationSeconds": 10.004898
+      },
+      "5": {
+        "file": "voiceover/MoutonDeVieuxDago/mouton-rebelle/5.mp3",
+        "durationSeconds": 3.056327
+      },
+      "6": {
+        "file": "voiceover/MoutonDeVieuxDago/mouton-rebelle/6.mp3",
+        "durationSeconds": 3.552653
+      },
+      "7": {
+        "file": "voiceover/MoutonDeVieuxDago/mouton-rebelle/7.mp3",
+        "durationSeconds": 11.363265
+      },
+      "8": {
+        "file": "voiceover/MoutonDeVieuxDago/mouton-rebelle/8.mp3",
+        "durationSeconds": 7.262041
+      },
+      "9": {
+        "file": "voiceover/MoutonDeVieuxDago/mouton-rebelle/9.mp3",
+        "durationSeconds": 12.146939
+      },
+      "10": {
+        "file": "voiceover/MoutonDeVieuxDago/mouton-rebelle/10.mp3",
+        "durationSeconds": 4.075102
+      },
+      "11": {
+        "file": "voiceover/MoutonDeVieuxDago/mouton-rebelle/11.mp3",
+        "durationSeconds": 13.400816
+      },
+      "12": {
+        "file": "voiceover/MoutonDeVieuxDago/mouton-rebelle/12.mp3",
+        "durationSeconds": 6.29551
+      },
+      "13": {
+        "file": "voiceover/MoutonDeVieuxDago/mouton-rebelle/13.mp3",
+        "durationSeconds": 3.918367
+      }
+    },
+    "retour": {
+      "1": {
+        "file": "voiceover/MoutonDeVieuxDago/retour/1.mp3",
+        "durationSeconds": 14.706939
+      },
+      "2": {
+        "file": "voiceover/MoutonDeVieuxDago/retour/2.mp3",
+        "durationSeconds": 5.955918
+      },
+      "3": {
+        "file": "voiceover/MoutonDeVieuxDago/retour/3.mp3",
+        "durationSeconds": 10.945306
+      },
+      "4": {
+        "file": "voiceover/MoutonDeVieuxDago/retour/4.mp3",
+        "durationSeconds": 18.364082
+      },
+      "5": {
+        "file": "voiceover/MoutonDeVieuxDago/retour/5.mp3",
+        "durationSeconds": 12.016327
+      },
+      "6": {
+        "file": "voiceover/MoutonDeVieuxDago/retour/6.mp3",
+        "durationSeconds": 5.929796
+      },
+      "7": {
+        "file": "voiceover/MoutonDeVieuxDago/retour/7.mp3",
+        "durationSeconds": 13.479184
+      },
+      "8": {
+        "file": "voiceover/MoutonDeVieuxDago/retour/8.mp3",
+        "durationSeconds": 11.206531
+      },
+      "9": {
+        "file": "voiceover/MoutonDeVieuxDago/retour/9.mp3",
+        "durationSeconds": 9.717551
+      }
+    }
+  },
+  "outroProverb": {
+    "file": "voiceover/MoutonDeVieuxDago/outro/proverb.mp3",
+    "durationSeconds": 3.866122
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "music": {
+    "intro": {
+      "file": "audio/music/intro.mp3",
+      "durationSeconds": 30.040816
+    },
+    "outro": {
+      "file": "audio/music/outro.mp3",
+      "durationSeconds": 60.029388
+    }
+  },
+  "ambiance": {
+    "maison": {
+      "0": {
+        "file": "audio/sfx/maison/0.mp3",
+        "durationSeconds": 14.027755
+      }
+    },
+    "route": {
+      "1": {
+        "file": "audio/sfx/route/1.mp3",
+        "durationSeconds": 18.050612
+      }
+    },
+    "marche": {
+      "0": {
+        "file": "audio/sfx/marche/0.mp3",
+        "durationSeconds": 24.032653
+      },
+      "13": {
+        "file": "audio/sfx/marche/13.mp3",
+        "durationSeconds": 18.050612
+      }
+    },
+    "mouton-rebelle": {
+      "3": {
+        "file": "audio/sfx/mouton-rebelle/3.mp3",
+        "durationSeconds": 38.034286
+      }
+    },
+    "retour": {
+      "0": {
+        "file": "audio/sfx/retour/0.mp3",
+        "durationSeconds": 20.035918
+      }
+    }
+  }
+}
