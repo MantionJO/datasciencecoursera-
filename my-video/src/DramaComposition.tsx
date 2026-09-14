@@ -16,6 +16,8 @@ import {
   LineTimeline,
   SceneTimeline,
   buildTimeline,
+  introMusicAudio,
+  outroMusicAudio,
   outroProverbAudio,
 } from "./story/timing";
 
@@ -24,10 +26,10 @@ import {
 // Swap in scripts/generate-voiceover.ts (ElevenLabs) for final-quality
 // voices later; the wiring below (<Audio> per line) stays the same.
 //
-// Intro/outro music, per-scene ambience and SFX are still not wired in —
-// no licensed assets exist in this project. Once available, drop files
-// under public/audio/ and add <Audio src={staticFile(...)}/> for those
-// beats, matching the sound design notes.
+// Music and ambiance/SFX are procedurally synthesized from ffmpeg tone/noise
+// generators (scripts/generate-soundscape.ts) — original and license-free,
+// but stylized/abstract stand-ins (a market "murmur" texture, not literal
+// bleats or voices), not real Foley or licensed music.
 
 type Props = {};
 
@@ -120,6 +122,7 @@ const IntroCard: React.FC<{ durationInFrames: number }> = ({
         opacity,
       }}
     >
+      <Audio src={staticFile(introMusicAudio.file)} />
       <Interactive.Div
         name="Title"
         style={{
@@ -229,6 +232,7 @@ const LineCaption: React.FC<{
           padding: "0 220px 100px 220px",
         }}
       >
+        {lineTimeline.audioFile && <Audio src={staticFile(lineTimeline.audioFile)} />}
         <Interactive.Div
           name="Ambiance"
           style={{
@@ -345,6 +349,7 @@ const OutroCard: React.FC<{ durationInFrames: number }> = ({
         padding: "0 200px",
       }}
     >
+      <Audio src={staticFile(outroMusicAudio.file)} />
       <Sequence from={Math.round(0.4 * fps)} layout="none">
         <Audio src={staticFile(outroProverbAudio.file)} />
       </Sequence>

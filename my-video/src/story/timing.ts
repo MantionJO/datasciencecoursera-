@@ -1,5 +1,6 @@
 import { Scene, scenes } from "./script";
 import audioManifest from "./audioManifest.json";
+import soundscapeManifest from "./soundscapeManifest.json";
 
 // Fallback pace for any line that has no generated audio yet (e.g. a new
 // line added after the last voiceover generation run).
@@ -23,6 +24,15 @@ export const getLineAudio = (sceneId: string, lineIndex: number) => {
 };
 
 export const outroProverbAudio = audioManifest.outroProverb;
+export const introMusicAudio = soundscapeManifest.music.intro;
+export const outroMusicAudio = soundscapeManifest.music.outro;
+
+export const getAmbianceAudio = (sceneId: string, lineIndex: number) => {
+  const entry = (soundscapeManifest.ambiance as Record<string, Record<string, { file: string; durationSeconds: number }>>)[
+    sceneId
+  ]?.[String(lineIndex)];
+  return entry ?? null;
+};
 
 const lineSeconds = (line: Scene["lines"][number], sceneId: string, lineIndex: number) => {
   if (line.ambiance && line.durationSeconds !== undefined) {
@@ -69,7 +79,9 @@ export const buildTimeline = (fps: number): Timeline => {
       );
       const from = sceneCursor;
       sceneCursor += durationInFrames;
-      const audio = line.ambiance ? null : getLineAudio(scene.id, lineIndex);
+      const audio = line.ambiance
+        ? getAmbianceAudio(scene.id, lineIndex)
+        : getLineAudio(scene.id, lineIndex);
       return { line, from, durationInFrames, audioFile: audio?.file ?? null };
     });
 
